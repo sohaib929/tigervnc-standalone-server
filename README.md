@@ -57,7 +57,7 @@ Group=YOUR_USERNAME
 WorkingDirectory=/home/YOUR_USERNAME
 PIDFile=/home/YOUR_USERNAME/.vnc/%H:%i.pid
 ExecStartPre=-/usr/bin/vncserver -kill :%i > /dev/null 2>&1
-ExecStart=/usr/bin/vncserver -depth 24 -geometry 1280x800 -localhost :%i
+ExecStart=/usr/bin/vncserver -depth 24 -geometry 1920x1080 -localhost :%i
 ExecStop=/usr/bin/vncserver -kill :%i
 [Install]
 WantedBy=multi-user.target
