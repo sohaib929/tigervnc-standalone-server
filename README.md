@@ -2,9 +2,14 @@
 
 This is a bash script for use to Install & Configure VNC Server on Ubuntu 22.04 or 20.04.
 
-Update Server 
+After establishing an SSH connection to your server, execute the following command to update your package index:
 ```
 # sudo apt update
+```
+
+Next we’ll run the following command to install xfce4 and xfce4-goodies:
+```
+# sudo apt install xfce4 xfce4-goodies
 ```
 
 Install ubuntu mate desktop
@@ -12,9 +17,8 @@ Install ubuntu mate desktop
 # sudo apt install ubuntu-mate-desktop
 ```
 
-Install tigervnc standalone server
+Install VNC server
 ```
-# sudo apt install xfce4 xfce4-goodies
 # sudo apt install tigervnc-standalone-server
 # nano ~/.vnc/xstartup
 ```
